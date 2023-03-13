@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "838887958834",
+    "project_id": "mcpengineershala-bd09c",
+    "storage_bucket": "mcpengineershala-bd09c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838887958834:android:cff418f83bd35e57700f2b",
+        "android_client_info": {
+          "package_name": "com.priyanshu.mcpengineershala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838887958834-mko363g1f0s76rp4ppk7qqgc131m32b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_OufhhPVTrR1M9BSg1C9t7sglYCqr_L4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838887958834-mko363g1f0s76rp4ppk7qqgc131m32b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

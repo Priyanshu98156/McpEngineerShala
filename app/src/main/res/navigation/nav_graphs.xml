@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graphs"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.home_fragment"
+        android:label="fragment_home_fragment"
+        tools:layout="@layout/fragment_home_fragment" >
+        <action
+            android:id="@+id/action_home_fragment_to_announcement_fragement2"
+            app:destination="@id/announcement_fragement" />
+        <action
+            android:id="@+id/action_home_fragment_to_seats_availability_fragment"
+            app:destination="@id/seats_availability_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_online_registration_fragment"
+            app:destination="@id/online_registration_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_about_us_fragment"
+            app:destination="@id/about_us_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_courses_fragment2"
+            app:destination="@id/courses_fragment2" />
+        <action
+            android:id="@+id/action_home_fragment_to_feeStructureFragment"
+            app:destination="@id/FeeStructureFragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_studentLoginFragment"
+            app:destination="@id/studentLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/announcement_fragement"
+        android:name="com.priyanshu.mcpengineershala.fragment.announcement_fragement"
+        android:label="fragment_announcement_fragement"
+        tools:layout="@layout/fragment_announcement_fragement" >
+        <action
+            android:id="@+id/action_announcement_fragement_to_home_fragment2"
+            app:destination="@id/home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seats_availability_fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.seats_availability_fragment"
+        android:label="fragment_seats_availability_fragment"
+        tools:layout="@layout/fragment_seats_availability_fragment" >
+        <action
+            android:id="@+id/action_seats_availability_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/online_registration_fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.online_registration_fragment"
+        android:label="fragment_online_registration_fragment"
+        tools:layout="@layout/fragment_online_registration_fragment" >
+        <action
+            android:id="@+id/action_online_registration_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/about_us_fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.about_us_fragment"
+        android:label="fragment_about_us_fragment"
+        tools:layout="@layout/fragment_about_us_fragment" >
+        <action
+            android:id="@+id/action_about_us_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courses_fragment2"
+        android:name="com.priyanshu.mcpengineershala.fragment.courses_fragment"
+        android:label="fragment_courses_fragment"
+        tools:layout="@layout/fragment_courses_fragment" >
+        <action
+            android:id="@+id/action_courses_fragment2_to_home_fragment"
+            app:destination="@id/home_fragment" />
+        <action
+            android:id="@+id/action_courses_fragment2_to_compEnggFragment"
+            app:destination="@id/compEnggFragment" />
+        <action
+            android:id="@+id/action_courses_fragment2_to_mechnicalEnggFragment"
+            app:destination="@id/MechnicalEnggFragment" />
+        <action
+            android:id="@+id/action_courses_fragment2_to_electricalEnggFragment"
+            app:destination="@id/ElectricalEnggFragment" />
+        <action
+            android:id="@+id/action_courses_fragment2_to_civilEnggFragment"
+            app:destination="@id/CivilEnggFragment" />
+        <action
+            android:id="@+id/action_courses_fragment2_to_electronicsAndCommFragment"
+            app:destination="@id/ElectronicsAndCommFragment" />
+        <action
+            android:id="@+id/action_courses_fragment2_to_pharmacyFragment"
+            app:destination="@id/PharmacyFragment" />
+        <action
+            android:id="@+id/action_courses_fragment2_to_autmbileEnggFragment"
+            app:destination="@id/AutomobileEnggFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/compEnggFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.CompEnggFragment"
+        android:label="CompEnggFragment" >
+        <action
+            android:id="@+id/action_compEnggFragment_to_courses_fragment2"
+            app:destination="@id/courses_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ElectricalEnggFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.ElectricalEnggFragment"
+        android:label="ElectricalEnggFragment" >
+        <action
+            android:id="@+id/action_electricalEnggFragment_to_courses_fragment2"
+            app:destination="@id/courses_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/MechnicalEnggFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.MechnicalEnggFragment"
+        android:label="MechnicalEnggFragment" >
+        <action
+            android:id="@+id/action_mechnicalEnggFragment_to_courses_fragment2"
+            app:destination="@id/courses_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/CivilEnggFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.CivilEnggFragment"
+        android:label="CivilEnggFragment" >
+        <action
+            android:id="@+id/action_civilEnggFragment_to_courses_fragment2"
+            app:destination="@id/courses_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/AutomobileEnggFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.AutmbileEnggFragment"
+        android:label="fragment_automobile_engg"
+        tools:layout="@layout/fragment_automobile_engg" >
+        <action
+            android:id="@+id/action_autmbileEnggFragment_to_courses_fragment2"
+            app:destination="@id/courses_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ElectronicsAndCommFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.ElectronicsAndCommFragment"
+        android:label="ElectronicsAndCommFragment" >
+        <action
+            android:id="@+id/action_ElectronicsAndCommFragment_to_courses_fragment2"
+            app:destination="@id/courses_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/PharmacyFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.PharmacyFragment"
+        android:label="PharmacyFragment" >
+        <action
+            android:id="@+id/action_pharmacyFragment_to_courses_fragment2"
+            app:destination="@id/courses_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/FeeStructureFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.FeeStructureFragment"
+        android:label="FeeStructureFragment" >
+        <action
+            android:id="@+id/action_feeStructureFragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentLoginFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.StudentLoginFragment"
+        android:label="StudentLoginFragment" >
+        <action
+            android:id="@+id/action_studentLoginFragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+        <action
+            android:id="@+id/action_studentLoginFragment_to_studentHomeFragment"
+            app:destination="@id/StudentHomeFragment" />
+        <action
+            android:id="@+id/action_studentLoginFragment_to_signUpStudentFragment"
+            app:destination="@id/signUpStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/StudentHomeFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.StudentHomeFragment"
+        android:label="StudentHomeFragment" />
+    <fragment
+        android:id="@+id/signUpStudentFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.SignUpStudentFragment"
+        android:label="SignUpStudentFragment" >
+        <action
+            android:id="@+id/action_signUpStudentFragment_to_studentLoginFragment"
+            app:destination="@id/studentLoginFragment" />
+        <action
+            android:id="@+id/action_signUpStudentFragment_to_StudentHomeFragment"
+            app:destination="@id/StudentHomeFragment" />
+    </fragment>
+</navigation>

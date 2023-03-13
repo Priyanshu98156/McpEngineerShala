@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ElectricalEnggFragment">
+
+    <TextView
+        android:id="@+id/tvCseHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="Electrical Engineering Department"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/tvCseHeading"
+        android:id="@+id/cvElectrical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:src="@drawable/electrical"/>
+    </androidx.cardview.widget.CardView>
+    <View
+
+        android:id="@+id/gap"
+        android:layout_below="@id/cvElectrical"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        />
+    <View
+
+        android:id="@+id/gapNew"
+        android:layout_below="@id/gap"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        />
+    <HorizontalScrollView
+        android:layout_below="@id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Hsv">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/hsv_background"
+                android:padding="5dp"
+                android:text="  Introduction  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvVision"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Vision  "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvMission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/hsv_background"
+                android:padding="5dp"
+                android:text="  Mission   "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvFacilities"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Facilities  "
+                android:textColor="@color/black"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvCareerAndJob"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Career And Job Opportunities "
+                android:textColor="@color/black"/>
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tvIntroPara"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Electrical Engineering. Department Embodies very Sincere Towards the building up of excellent career for diploma holders in the field of Electrical Engg .It is a basic and conventional course of Engg which is being offered since 1958 in this institute. The department. not only provides exemplary training to its own students but practical training is also provided to other Engg. Institute near by regions. The deptt.is of the firm opinion that once the students have understood the basic concepts of different subjects thoroughly and have received proper practical training in the laboratories, they are well set to be placed in any organization of repute as an electrical Engg.
+        \n\nThe department is well equipped with various laboratories. It has highly qualified and experienced staff .Presently, the intake to the program is of 60 students. Duration of the course is of three years, each year is comprised of two semesters and at the end of each semester, examinations are conducted by Punjab State board of Technical Education, Chandigarh. A month’s compulsory practical training is provided to the students of Electrical Eng. Department in leading companies and organization after the end of fourth semester."/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvVisionPara"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="The department of Electrical Engineering is committed to innovation and excellence in teaching and to provide program of the highest quality to produce good diploma engineers who have experience of putting theory into practice and are also capable of succeeding in advanced studies."/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvMissionPara"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="To produce diploma engineers for the high technology field by promoting life long learning technical expertise, ethical standards and leadership qualities.
+        \nTo provide students with a supportive environment to facilitate learning and to solve life problems in electrical engineering."/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvFacilitiesPara"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="The department has the facility of fully equipped and spacious laboratories The Elect. Machine Lab. has a number of AC / DC motor generator set , single phase and three phase transformer, single phase and three phase energy meter etc. for conducting various experiments.
+
+        \nBesides this, there is Electrical Measurement lab, Electronics lab., Basic Electrical lab, Electrical Power lab and Electrical Workshop having all the equipment’s and facilities for the conduct of various experiments / exercises as per curriculum of diploma education programme.
+
+        \nThe deptt. has received a grant of Rs.3.00 lakhs for the modernisation of laboratories under the Modernisation and Removal of Obsolescence Scheme(MODROBS)  of All India Council of Technical Education(AICTE)."/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvCareerAndJobPara"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="The students passing Diploma in Electrical Engg, can work in various capacities like Junior Engineer, Electrical Inspector, Supervisor etc. in different organisations / sectors as listed below:-
+
+\nGovt. Departments such as, Electricity Board, MES, PWD, Railways, Thermal, Hydro and Nuclear Power Station’s and other boards and corporations."/>
+
+
+</RelativeLayout>
+</layout>

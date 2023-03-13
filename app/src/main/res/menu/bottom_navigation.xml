@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:id="@+id/homeid"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HOME"/>
+
+    <item android:id="@+id/explore"
+        android:icon="@drawable/ic_baseline_explore_24"
+        android:title="Explore"/>
+
+    <item android:id="@+id/about"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="About us"/>
+
+</menu>

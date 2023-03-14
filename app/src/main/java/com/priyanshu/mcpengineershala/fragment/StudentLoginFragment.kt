@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.priyanshu.mcpengineershala.Home_screen_activity
 import com.priyanshu.mcpengineershala.R
+import com.priyanshu.mcpengineershala.StudentMainScreenActivity
 import com.priyanshu.mcpengineershala.databinding.FragmentStudentLoginBinding
 import kotlin.math.log
 
@@ -55,6 +56,8 @@ class StudentLoginFragment : Fragment() {
                 firebaseAuth.signInWithEmailAndPassword(binding.email.text.toString(),binding.pass.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful) {
                         logInScreen.navController.navigate(R.id.StudentHomeFragment)
+                        val intent = Intent(logInScreen,StudentMainScreenActivity::class.java)
+                        startActivity(intent)
                     } else {
                         Toast.makeText(logInScreen, it.exception.toString(), Toast.LENGTH_SHORT).show()
                     }

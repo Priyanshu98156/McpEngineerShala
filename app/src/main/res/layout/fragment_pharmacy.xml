@@ -1,16 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.PharmacyFragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvCivilHeading"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="Pharmacy Department"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/tvCivilHeading"
+        android:id="@+id/cvCivil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pha"/>
+    </androidx.cardview.widget.CardView>
+    <View
 
-</FrameLayout>
+        android:id="@+id/gap"
+        android:layout_below="@id/cvCivil"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        />
+    <View
+
+        android:id="@+id/gapNew"
+        android:layout_below="@id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black"
+        />
+    <HorizontalScrollView
+        android:layout_below="@id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Hsv">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/hsv_background"
+                android:padding="5dp"
+                android:text="  Introduction  "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvVision"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Vision  "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvMission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/hsv_background"
+                android:padding="5dp"
+                android:text="  Mission  "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvFacilities"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Facilities  "
+                android:textColor="@color/black"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvCareerAndJob"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Career And Job Opportunities  "
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:id="@+id/tvIntroPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Pharmacy is the para-medical branch that fulfils one of the most basic needs of mankind, that is, alleviating suffering due to ill health by supplying safe, effective and authentic medicines and guiding the people to adopt healthy life style, in order to maintain good health. A Pharmacist is responsible for dispensing, storage and manufacturing of drugs.\n\nApart from this, it also offers clinical services like counselling the patients about the correct use, dosages, side effects and adverse reaction of the drugs and assist them in the treatment of poisoning. He also makes them aware about deadly diseases like AIDS, Cancer, Hepatitis and helps in their prevention and early detection. It is the pharmacist, who first of all becomes aware of an epidemic of infectious disease in a community. Thus, pharmacy is a centre of community health and contributes a great deal to preventive and social medicine.
+"/>
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvVisionPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="To create best Pharmacy professionals for imparting high quality patient care, improving the health and well-being of the community locally, nationally and globally."/>
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvMissionPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="To provide best Pharmacy education and training to the students for a better career and to be good citizens of a national and international society."/>
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvFacilitiesPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="The deptt. has fully equipped and spacious laboratories, one machine room and one museum as per norms of PCI\n\nThe Laboratories have equipments and facilities for conducting the various experiments as given in E.R.91 of PCI for diploma Educational programme.\n\nIt also has a botanical garden in which a large number of medicinal plants have been grown."/>
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvCareerAndJobPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="\nJob Opportunities
+        \nThe students passing Diploma in Pharmacy have the following job opportunities.
+        \n– As dispensing pharmacist in hospitals / dispensaries of various govt. deptts. Including defence.
+        \n– As dispensing pharmacist in various autonomous bodies.
+        \n– As professional sales representative in various pharmaceutical firms/companies.
+        \n– Self employment i.e. as Chemists and druggists or re-packing of the drugs.
+        \n\nCareer Advancements
+        \nThe students passing the diploma in Pharmacy can further improve their qualification as shown below:
+        \n– Direct Admission to 2nd year B.Pharm. and then M.Pharm and Ph.D.
+
+"
+/>
+
+
+</RelativeLayout>
+</ScrollView>
 </layout>

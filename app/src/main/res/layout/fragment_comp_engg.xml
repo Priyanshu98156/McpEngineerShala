@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
-<RelativeLayout
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.CompEnggFragment"
-   >
+    tools:context=".fragment.CompEnggFragment">
 
     <TextView
         android:id="@+id/tvCseHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="6dp"
@@ -25,9 +27,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <ImageView
+            android:scaleType="fitCenter"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
-            android:src="@drawable/computer"/>
+            android:src="@drawable/compengg"/>
     </androidx.cardview.widget.CardView>
     <View
 
@@ -74,19 +77,6 @@
                 android:text="  Introduction "
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                />
-            <TextView
-                android:id="@+id/tvStaff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="6dp"
-                android:layout_marginEnd="7dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/hsv_background"
-                android:padding="5dp"
-                android:text="  Staff  "
-                android:textColor="@color/black"
                 />
 
             <TextView
@@ -139,28 +129,28 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
-        android:visibility="visible"
-        android:id="@+id/tvIntroPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_below="@+id/Hsv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:text="The computer hardware and software industries now have a wealth of growth potential because to the globalisation of the Indian economy. Software is one of the fastest-growing industries in the Indian economy, and the Mehr Chand Polytechnic's department of Computer Science And Engineering has been at the forefront of producing highly qualified software engineers. Together with providing theoretical knowledge, a lot of emphasis is placed on practical training and overall personality development of the student.Physical experimentation and mathematical analysis are two important paradigms in science and engineering that were developed roughly twenty years ago. The third one now is computer-based simulation and visualisation. The most effective instruments for accessing information are computers. Computer Science and Engineering Department"/>
+        <TextView
+            android:id="@+id/tvIntroPara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Hsv"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:justificationMode="inter_word"
+            android:text="The computer hardware and software industries now have a wealth of growth potential because to the globalisation of the Indian economy. Software is one of the fastest-growing industries in the Indian economy, and the Mehr Chand Polytechnic's department of Computer Science And Engineering has been at the forefront of producing highly qualified software engineers. Together with providing theoretical knowledge, a lot of emphasis is placed on practical training and overall personality development of the student.Physical experimentation and mathematical analysis are two important paradigms in science and engineering that were developed roughly twenty years ago. The third one now is computer-based simulation and visualisation. The most effective instruments for accessing information are computers. Computer Science and Engineering Department"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
 
-    <ImageView
-        android:id="@+id/imageStaff"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/Hsv"
-        android:layout_marginTop="2dp"
-        android:visibility="gone"
-        android:src="@drawable/staffcompfigma" />
 
     <TextView
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:justificationMode="inter_word"
+        android:layout_margin="15dp"
         android:visibility="gone"
         android:id="@+id/tvVisionPara"
         android:layout_marginTop="10dp"
@@ -172,6 +162,10 @@
         android:textColor="@color/black"
         android:text="To facilitate the flexible environment to students with fundamental innovation of theoretical and practical study to achieve the requirements in the industry and society. At diploma level, our vision is to prepare the students to face the challenges of life and to solve the real problems which occur in society."/>
     <TextView
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:justificationMode="inter_word"
+        android:layout_margin="15dp"
         android:visibility="gone"
         android:id="@+id/tvMissionPara"
         android:layout_marginTop="10dp"
@@ -183,6 +177,10 @@
         android:textColor="@color/black"
         android:text="To provide quality engineering that help students to enhance knowledge in their perspective fields and stimulate academic and intellectual growth of students by outstanding teaching."/>
     <TextView
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:justificationMode="inter_word"
+        android:layout_margin="15dp"
         android:visibility="gone"
         android:id="@+id/tvComplabsPara"
         android:layout_marginTop="10dp"
@@ -194,6 +192,10 @@
         android:textColor="@color/black"
         android:text="Computer Engineering Department of Mehr Chand polytechnic is well known for rigorous exposure to hands on practice to reinforce the spirit of excellence among the students and to make them successful technocrats. There are three computer labs in the department. The labs are well furnished, equipped and air-conditioned. There are about 60 number of computers all with Pentium Processor. All the labs are on LAN with 24 hr 50 Mbps Leased Line  Internet facility."/>
     <TextView
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:justificationMode="inter_word"
+        android:layout_margin="15dp"
         android:visibility="gone"
         android:id="@+id/tvCareerAndJobPara"
         android:layout_marginTop="10dp"
@@ -212,4 +214,5 @@
 
 
 </RelativeLayout>
+</ScrollView>
 </layout>

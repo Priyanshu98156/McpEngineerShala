@@ -12,7 +12,10 @@
         android:title="Explore"/>
 
     <item android:id="@+id/about"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:icon="@drawable/about_us_2"
         android:title="About us"/>
+    <item android:id="@+id/me"
+        android:icon="@drawable/ic_baseline_mood_24"
+        android:title="Priyanshu"/>
 
 </menu>

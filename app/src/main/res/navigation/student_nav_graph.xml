@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_nav_graph"
+    app:startDestination="@id/studentHomeFragment">
+
+    <fragment
+        android:id="@+id/studentHomeFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.StudentHomeFragment"
+        android:label="StudentHomeFragment" >
+        <action
+            android:id="@+id/action_studentHomeFragment_to_announcement_fragement"
+            app:destination="@id/announcement_fragement" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_syllabusFragment"
+            app:destination="@id/syllabusFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_teacherListFragment"
+            app:destination="@id/teacherListFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_testingFragment"
+            app:destination="@id/testingFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_mstFragment"
+            app:destination="@id/mstFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_NOtesFragment"
+            app:destination="@id/NOtesFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_assignmentFragment"
+            app:destination="@id/assignmentFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_timeTableFragment"
+            app:destination="@id/timeTableFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_questionPaperFragment"
+            app:destination="@id/questionPaperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/announcement_fragement"
+        android:name="com.priyanshu.mcpengineershala.fragment.announcement_fragement"
+        android:label="fragment_announcement_fragement"
+        tools:layout="@layout/fragment_announcement_fragement" >
+        <action
+            android:id="@+id/action_announcement_fragement_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+        <action
+            android:id="@+id/action_announcement_fragement_to_showAnnouncementFragment"
+            app:destination="@id/showAnnouncementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/syllabusFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.SyllabusFragment"
+        android:label="SyllabusFragment" >
+        <action
+            android:id="@+id/action_syllabusFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+        <action
+            android:id="@+id/action_syllabusFragment_to_firstSemFragment"
+            app:destination="@id/firstSemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstSemFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.FirstSemFragment"
+        android:label="FirstSemFragment" >
+        <action
+            android:id="@+id/action_firstSemFragment_to_syllabusFragment"
+            app:destination="@id/syllabusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherListFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.TeacherListFragment"
+        android:label="TeacherListFragment" >
+        <action
+            android:id="@+id/action_teacherListFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showAnnouncementFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.ShowAnnouncementFragment"
+        android:label="ShowAnnouncementFragment" >
+        <action
+            android:id="@+id/action_showAnnouncementFragment_to_announcement_fragement"
+            app:destination="@id/announcement_fragement" />
+    </fragment>
+    <fragment
+        android:id="@+id/testingFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.TestingFragment"
+        android:label="TestingFragment" >
+        <action
+            android:id="@+id/action_testingFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showMstRecordFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.ShowMstRecordFragment"
+        android:label="ShowMstRecordFragment" >
+        <action
+            android:id="@+id/action_showMstRecordFragment_to_mstFragment"
+            app:destination="@id/mstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mstFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.MstFragment"
+        android:label="MstFragment" >
+        <action
+            android:id="@+id/action_mstFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+        <action
+            android:id="@+id/action_mstFragment_to_showMstRecordFragment"
+            app:destination="@id/showMstRecordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NOtesFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.NOtesFragment"
+        android:label="NOtesFragment" >
+        <action
+            android:id="@+id/action_NOtesFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+        <action
+            android:id="@+id/action_NOtesFragment_to_showNotesFragment"
+            app:destination="@id/showNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showNotesFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.ShowNotesFragment"
+        android:label="ShowNotesFragment" >
+        <action
+            android:id="@+id/action_showNotesFragment_to_NOtesFragment"
+            app:destination="@id/NOtesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/assignmentFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.AssignmentFragment"
+        android:label="AssignmentFragment" >
+        <action
+            android:id="@+id/action_assignmentFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+        <action
+            android:id="@+id/action_assignmentFragment_to_showAssignmentFragment"
+            app:destination="@id/showAssignmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showAssignmentFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.ShowAssignmentFragment"
+        android:label="ShowAssignmentFragment" >
+        <action
+            android:id="@+id/action_showAssignmentFragment_to_assignmentFragment"
+            app:destination="@id/assignmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeTableFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.TimeTableFragment"
+        android:label="TimeTableFragment" >
+        <action
+            android:id="@+id/action_timeTableFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionPaperFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.QuestionPaperFragment"
+        android:label="QuestionPaperFragment" >
+        <action
+            android:id="@+id/action_questionPaperFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment" />
+        <action
+            android:id="@+id/action_questionPaperFragment_to_questionPaper1Fragment"
+            app:destination="@id/questionPaper1Fragment" />
+        <action
+            android:id="@+id/action_questionPaperFragment_to_questionPaper2Fragment"
+            app:destination="@id/questionPaper2Fragment" />
+        <action
+            android:id="@+id/action_questionPaperFragment_to_questionPaper3Fragment"
+            app:destination="@id/questionPaper3Fragment" />
+        <action
+            android:id="@+id/action_questionPaperFragment_to_questionPaper3Fragment2"
+            app:destination="@id/questionPaper3Fragment" />
+        <action
+            android:id="@+id/action_questionPaperFragment_to_questionPaper3Fragment3"
+            app:destination="@id/questionPaper3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionPaper1Fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.QuestionPaper1Fragment"
+        android:label="QuestionPaper1Fragment" >
+        <action
+            android:id="@+id/action_questionPaper1Fragment_to_questionPaperFragment"
+            app:destination="@id/questionPaperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionPaper2Fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.QuestionPaper2Fragment"
+        android:label="QuestionPaper2Fragment" >
+        <action
+            android:id="@+id/action_questionPaper2Fragment_to_questionPaperFragment"
+            app:destination="@id/questionPaperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionPaper3Fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.QuestionPaper3Fragment"
+        android:label="fragment_question_paper3"
+        tools:layout="@layout/fragment_question_paper3" >
+        <action
+            android:id="@+id/action_questionPaper3Fragment_to_questionPaperFragment"
+            app:destination="@id/questionPaperFragment" />
+        <action
+            android:id="@+id/action_questionPaper3Fragment_to_questionPaperFragment2"
+            app:destination="@id/questionPaperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionPaper4Fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.QuestionPaper4Fragment"
+        android:label="QuestionPaper4Fragment" />
+    <fragment
+        android:id="@+id/questionPaper5Fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.QuestionPaper5Fragment"
+        android:label="QuestionPaper5Fragment" />
+    <fragment
+        android:id="@+id/QUestionPaper6Fragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.QUestionPaper6Fragment"
+        android:label="QUestionPaper6Fragment" />
+    <fragment
+        android:id="@+id/showQuestionPaperFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.ShowQuestionPaperFragment"
+        android:label="ShowQuestionPaperFragment" />
+</navigation>

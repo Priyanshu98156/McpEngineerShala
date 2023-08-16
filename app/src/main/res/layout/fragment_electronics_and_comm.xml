@@ -1,16 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.ElectronicsAndCommFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvCivilHeading"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="Electronics And Communication Engineering"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/tvCivilHeading"
+        android:id="@+id/cvCivil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ece"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+    <View
 
-</FrameLayout>
-</layout>
+        android:id="@+id/gap"
+        android:layout_below="@id/cvCivil"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        />
+    <View
+
+        android:id="@+id/gapNew"
+        android:layout_below="@id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black"
+        />
+    <HorizontalScrollView
+        android:layout_below="@id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Hsv">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/hsv_background"
+                android:padding="5dp"
+                android:text="  Introduction  "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvVision"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Vision  "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvMission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/hsv_background"
+                android:padding="5dp"
+                android:text="  Mission  "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvFacilities"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Facilities  "
+                android:textColor="@color/black"/>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/tvCareerAndJob"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Career And Job Opportunities  "
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:id="@+id/tvIntroPara"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="It has been rightly said by his excellency, Dr. A.P.J Abdul Kalam, President of our glorious India that Technical Institutes plays a vital role in moulding the character and shaping the personality of the youth and exactly the same has been done by Mehr Chand Polytechnic College ,Jalandhar. Electronics and Communication Engg . Diploma was started in the year 1982 and now this department is approaching sky-scrapping heights of glory and success and it has made remarkable progress. This department stands as an epitome of excellence with the glorious tradition of achievements in almost all spheres. This department won the best polytechnic award amongst the 12 Polytechnics participated throughout the country under the “PROJECT IMPACT” from the Deptt. Of Electronics, Govt. of India, sponsored by Swiss Govt."/>
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvVisionPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="To impart knowledge and excellence in this field and Technology with global perspectives to our students and to make them ethically strong, technologically superior and employable to serve the Nation."/>
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvMissionPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="The foremost objective of the department is to develop technical skills in the students demanded by today’s engineering professionals by providing a sound technical platform and required knowledge base. It prepares them to meet the challenges faced by today’s professional by exposing them to a wide array of cutting-edge technologies."/>
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvFacilitiesPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Electronics &amp; Communication Engineering Department of Mehr Chand polytechnic is well known for rigorous exposure to hands on practice to reinforce the spirit of excellence among the students and to make them successful technocrats. There are three computer labs in the department. The labs are well furnished, equipped and air-conditioned. There are about 50 number of computers all with i3 Processor. All the labs are on LAN with 24 hr 50 Mbps Leased Line (Broadband 1:1) Internet facility.\n SOFTWARE STRENGTHS
+        \n– Operating System -Windows 7,Windows 8, Window 10
+    \n– Server- Windows 2000, Windows 2003 Server
+    \n– MS-office -2007,2010,2013,2016
+    \n– Arduino 1.8, 1.2 or above.
+    \n– PCB Express
+    \n– Easy EDA
+    \n– Photoshop 7
+    \nHARDWARE STRENGTH
+    \nLABS
+    \n. Basic Electronics Lab.
+    \n. Digital Electronic Lab.
+    \n. Power Electronics Lab.
+    \n. Instrumentation Lab.
+    \n. Microprocessor Lab.
+    "
+        />
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvCareerAndJobPara"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="There is a gap between the products of Engineering Institute and requirements of industries, with the motive of reducing this colossal gap; the students have to undergone training in relevant industry. Report Writing Skills and Seminar Presentation do the evaluation of performance.\n\
+A quality placement of any institute is the caliber of student, which has correlation with effort of the students and faculty. I feel immense proud to in form that many industries approach us for campus placements like M/S TRIDENT GROUP, HINDUSTAN COMPUTERS, LG ELECTRONICS, MOHINDRA &amp; MOHINDRA, LARSEN &amp; TURBO etc.\n\n
+By considering, the need of industries for soft skill &amp; interview skills and working with this aim in mind, at Electronics &amp; Communication Engg. Department, we lay special emphasis on personality development. Workshops on personality development, interview skill and behavior modification etc. are regular feature at department. Our faculty and students are also involved in developing and delivering executive development programs for industries."/>
+
+</RelativeLayout>
+</ScrollView>
+
+    </layout>

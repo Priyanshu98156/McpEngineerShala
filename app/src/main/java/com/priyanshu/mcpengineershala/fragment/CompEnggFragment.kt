@@ -36,30 +36,12 @@ class CompEnggFragment : Fragment() {
 
         binding.tvIntro.setOnClickListener {
             binding.tvIntro.setTypeface(null,Typeface.BOLD)
-            binding.tvStaff.setTypeface(null,Typeface.NORMAL)
             binding.tvVision.setTypeface(null,Typeface.NORMAL)
             binding.tvMission.setTypeface(null,Typeface.NORMAL)
             binding.tvComplabs.setTypeface(null,Typeface.NORMAL)
             binding.tvCareerAndJob.setTypeface(null,Typeface.NORMAL)
 
             binding.tvIntroPara.visibility = View.VISIBLE
-            binding.imageStaff.visibility = View.GONE
-            binding.tvVisionPara.visibility = View.GONE
-            binding.tvMissionPara.visibility = View.GONE
-            binding.tvComplabsPara.visibility = View.GONE
-            binding.tvCareerAndJobPara.visibility = View.GONE
-
-        }
-        binding.tvStaff.setOnClickListener {
-            binding.tvIntro.setTypeface(null,Typeface.NORMAL)
-            binding.tvStaff.setTypeface(null,Typeface.BOLD)
-            binding.tvVision.setTypeface(null,Typeface.NORMAL)
-            binding.tvMission.setTypeface(null,Typeface.NORMAL)
-            binding.tvComplabs.setTypeface(null,Typeface.NORMAL)
-            binding.tvCareerAndJob.setTypeface(null,Typeface.NORMAL)
-
-            binding.tvIntroPara.visibility = View.GONE
-            binding.imageStaff.visibility = View.VISIBLE
             binding.tvVisionPara.visibility = View.GONE
             binding.tvMissionPara.visibility = View.GONE
             binding.tvComplabsPara.visibility = View.GONE
@@ -68,14 +50,12 @@ class CompEnggFragment : Fragment() {
         }
         binding.tvVision.setOnClickListener {
             binding.tvIntro.setTypeface(null,Typeface.NORMAL)
-            binding.tvStaff.setTypeface(null,Typeface.NORMAL)
             binding.tvVision.setTypeface(null,Typeface.BOLD)
             binding.tvMission.setTypeface(null,Typeface.NORMAL)
             binding.tvComplabs.setTypeface(null,Typeface.NORMAL)
             binding.tvCareerAndJob.setTypeface(null,Typeface.NORMAL)
 
             binding.tvIntroPara.visibility = View.GONE
-            binding.imageStaff.visibility = View.GONE
             binding.tvVisionPara.visibility = View.VISIBLE
             binding.tvMissionPara.visibility = View.GONE
             binding.tvComplabsPara.visibility = View.GONE
@@ -83,14 +63,12 @@ class CompEnggFragment : Fragment() {
         }
         binding.tvMission.setOnClickListener {
             binding.tvIntro.setTypeface(null,Typeface.NORMAL)
-            binding.tvStaff.setTypeface(null,Typeface.NORMAL)
             binding.tvVision.setTypeface(null,Typeface.NORMAL)
             binding.tvMission.setTypeface(null,Typeface.BOLD)
             binding.tvComplabs.setTypeface(null,Typeface.NORMAL)
             binding.tvCareerAndJob.setTypeface(null,Typeface.NORMAL)
 
             binding.tvIntroPara.visibility = View.GONE
-            binding.imageStaff.visibility = View.GONE
             binding.tvVisionPara.visibility = View.GONE
             binding.tvMissionPara.visibility = View.VISIBLE
             binding.tvComplabsPara.visibility = View.GONE
@@ -98,14 +76,12 @@ class CompEnggFragment : Fragment() {
         }
         binding.tvComplabs.setOnClickListener {
             binding.tvIntro.setTypeface(null,Typeface.NORMAL)
-            binding.tvStaff.setTypeface(null,Typeface.NORMAL)
             binding.tvVision.setTypeface(null,Typeface.NORMAL)
             binding.tvMission.setTypeface(null,Typeface.NORMAL)
             binding.tvComplabs.setTypeface(null,Typeface.BOLD)
             binding.tvCareerAndJob.setTypeface(null,Typeface.NORMAL)
 
             binding.tvIntroPara.visibility = View.GONE
-            binding.imageStaff.visibility = View.GONE
             binding.tvVisionPara.visibility = View.GONE
             binding.tvMissionPara.visibility = View.GONE
             binding.tvComplabsPara.visibility = View.VISIBLE
@@ -113,14 +89,12 @@ class CompEnggFragment : Fragment() {
         }
         binding.tvCareerAndJob.setOnClickListener {
             binding.tvIntro.setTypeface(null,Typeface.NORMAL)
-            binding.tvStaff.setTypeface(null,Typeface.NORMAL)
             binding.tvVision.setTypeface(null,Typeface.NORMAL)
             binding.tvMission.setTypeface(null,Typeface.NORMAL)
             binding.tvComplabs.setTypeface(null,Typeface.NORMAL)
             binding.tvCareerAndJob.setTypeface(null,Typeface.BOLD)
 
             binding.tvIntroPara.visibility = View.GONE
-            binding.imageStaff.visibility = View.GONE
             binding.tvVisionPara.visibility = View.GONE
             binding.tvMissionPara.visibility = View.GONE
             binding.tvComplabsPara.visibility = View.GONE

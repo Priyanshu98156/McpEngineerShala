@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">MCPEngineerShala</string>
     <string name="open">MCPEngineerShala</string>
-    <string name="close">MCPEngineerShala</string>
+    <string name="close">close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="Discipline">
+        <item>Computer Science And Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Electronics and Comm. Engineering</item>
+        <item>Automobile Engineering</item>
+        <item>D. Pharmacy.</item>
+        <item>Mechanical Engineering</item>
+    </string-array>
 
 </resources>

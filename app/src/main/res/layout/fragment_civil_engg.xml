@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.CivilEnggFragment">
@@ -24,9 +27,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
+            android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/civil"/>
+            android:src="@drawable/civil_engg"/>
     </androidx.cardview.widget.CardView>
     <View
 
@@ -121,33 +125,36 @@
         </LinearLayout>
     </HorizontalScrollView>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="visible"
         android:id="@+id/tvIntroPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="It was established in 1954 and is the oldest field of engineering at Mehr Chand Polytechnic College in Jalandhar. A broad-based diploma programme in civil engineering is available to matriculating students through the department of civil engineering. The course curriculum is thorough and well-designed to give students a solid foundation in all areas connected to the discipline of civil engineering through hands-on training camps, site visits, theoretical sessions, project work, and lab exercises. Throughout the previous 50 years, skilled, experienced, and dedicated faculty members have worked extremely hard to elevate the department to a position of prominence throughout all of northern India. Due to the development boom and the numerous construction projects undertaken by Indian and international businesses"/>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvVisionPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="To impart knowledge and excellence in Civil Engineering and Technology with global perspectives to our students and to make them ethically strong, technologically superior and employable to serve the Nation."/>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvMissionPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -155,11 +162,13 @@
         android:text="To produce Civil Engineering of high caliber , technical skills and ethical values to serve the society and nation. Efforts are going to make the department, a centre of excellence and tp provide knowledge base and consultancy services to the community."/>
 
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvFacilitiesPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
+
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -167,11 +176,12 @@
         android:text="Talking about placements the students have capitalized on the reputation of this prestigious institute and have managed to get themselves well placed in reputed organizations including manufacturing, textile, automobile and marketing sectors. Only during the last three years over fifty students have been placed in the industries related to any one of the above mentioned sectors. In addition to this our students have managed to find a place in various public sector undertakings like BHEL, GREF, BARC, PWD, NTPC, NHPC, Maruti Udyog Ltd and Indian railways etc."/>
 
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvCareerAndJobPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -191,4 +201,5 @@
 
 
 </RelativeLayout>
+    </ScrollView>
 </layout>

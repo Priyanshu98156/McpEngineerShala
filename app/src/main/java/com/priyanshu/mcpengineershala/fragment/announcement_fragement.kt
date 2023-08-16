@@ -5,22 +5,34 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import com.priyanshu.mcpenggshalaadmin.Interface.OnUserClickAnnouncement
 import com.priyanshu.mcpengineershala.R
+import com.priyanshu.mcpengineershala.StudentMainScreenActivity
+import com.priyanshu.mcpengineershala.adapter.AnnouncementAdapter
+import com.priyanshu.mcpengineershala.adapter.TeacherListAdapter
+import com.priyanshu.mcpengineershala.databinding.FragmentAnnouncementFragementBinding
+import com.priyanshu.mcpengineershala.dataclasses.Announcement
+import com.priyanshu.mcpengineershala.dataclasses.Registration
+import com.priyanshu.mcpengineershala.dataclasses.Teachers
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [announcement_fragement.newInstance] factory method to
- * create an instance of this fragment.
- */
-class announcement_fragement : Fragment() {
+class announcement_fragement : Fragment(), OnUserClickAnnouncement {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    lateinit var announcementList: ArrayList<Announcement>
+    lateinit var announcementAdapter: AnnouncementAdapter
+    lateinit var announcementScreen: StudentMainScreenActivity
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,27 +46,60 @@ class announcement_fragement : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_announcement_fragement, container, false)
+        var binding = FragmentAnnouncementFragementBinding.inflate(layoutInflater, container, false)
+        announcementScreen = activity as StudentMainScreenActivity
+        announcementList = ArrayList()
+        var uid:String = ""
+
+        var currentUser = FirebaseAuth.getInstance().currentUser
+        if (currentUser != null){
+            uid = currentUser.uid
+        }
+        var testing:String? =""
+
+        arguments?.let {
+            testing = it.getString("dept")
+        }
+        println("===========================================announcementFragment"+testing)
+        FirebaseDatabase.getInstance().reference.child("Announcement")
+            .addValueEventListener(object :
+                ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    for (each in snapshot.children) {
+                        var data = each.getValue(Announcement::class.java)
+                        if ((data != null && data.dept == testing) || (data != null && data.dept == "Admin") ) {
+                            println(data)
+                            announcementList.add(data)
+                        }
+                        announcementAdapter = AnnouncementAdapter(
+                            announcementScreen,
+                            announcementList,
+                            this@announcement_fragement
+                        )
+                        binding.rvAnnouncement.layoutManager =
+                            LinearLayoutManager(announcementScreen)
+                        binding.rvAnnouncement.adapter = announcementAdapter
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+
+                }
+
+            })
+
+
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment announcement_fragement.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            announcement_fragement().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onUserAnnouncement(announce: Announcement) {
+        println("userData $announce")
+        var bundle = Bundle()
+        bundle.putString("title", announce.title)
+        bundle.putString("description", announce.description)
+        bundle.putString("imageUrl", announce.imageUri)
+
+        announcementScreen.navController.navigate(R.id.showAnnouncementFragment, bundle)
     }
+
 }

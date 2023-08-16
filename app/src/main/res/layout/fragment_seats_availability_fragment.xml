@@ -9,23 +9,15 @@
 
     android:gravity="center">
 
-<com.airbnb.lottie.LottieAnimationView
-    android:id="@+id/looo"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scaleType="fitXY"
-
-    app:lottie_rawRes="@raw/loo"
-    app:lottie_autoPlay="true"
-    app:lottie_loop="true"/>
 
     <TextView
         android:id="@+id/tvSeats"
         android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30dp"
-        android:text="Available seats"
+        android:gravity="center"
+        android:text="Total seats"
         android:textColor="@color/black"/>
     <com.ortiz.touchview.TouchImageView
         android:layout_below="@id/tvSeats"

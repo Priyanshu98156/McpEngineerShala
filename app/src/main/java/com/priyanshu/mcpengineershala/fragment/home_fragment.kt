@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.priyanshu.mcpengineershala.FeeStructureActivity
 import com.priyanshu.mcpengineershala.Home_screen_activity
 import com.priyanshu.mcpengineershala.ImageAdapter
 import com.priyanshu.mcpengineershala.databinding.FragmentHomeFragmentBinding
@@ -24,11 +23,6 @@ import com.priyanshu.mcpengineershala.databinding.FragmentHomeFragmentBinding
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [home_fragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class home_fragment : Fragment() {
     lateinit var HomeScreen:Home_screen_activity
 
@@ -57,6 +51,7 @@ class home_fragment : Fragment() {
     ): View? {
         HomeScreen= activity as Home_screen_activity
        binding = FragmentHomeFragmentBinding.inflate(layoutInflater,container,false)
+        HomeScreen.supportActionBar?.title = "MCPEngineerShala"
         init()
         setUpTransformer()
         viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
@@ -66,9 +61,7 @@ class home_fragment : Fragment() {
                 handler.postDelayed(runnable, 2000)
             }
         })
-        binding.Cvannounce.setOnClickListener {
-                HomeScreen.navController.navigate(R.id.announcement_fragement)
-        }
+
         binding.CvFeeStr.setOnClickListener {
             HomeScreen.navController.navigate(R.id.FeeStructureFragment)
 //            val intent = Intent(activity,FeeStructureActivity::class.java)
@@ -78,17 +71,16 @@ class home_fragment : Fragment() {
         binding.CvSeats.setOnClickListener {
             HomeScreen.navController.navigate(R.id.seats_availability_fragment)
         }
-        binding.Cvcourses.setOnClickListener {
+        binding.cvCourses.setOnClickListener {
             HomeScreen.navController.navigate(R.id.courses_fragment2)
         }
         binding.Cvregister.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW,Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSeGv51fh_CC0O6D8TYMW6TgaqyKHsIw_K5jz8hAT3rYvD_d0w/viewform"))
-            startActivity(intent)
-        }
+            HomeScreen.navController.navigate(R.id.onlineRegistrationFragment)
+             }
         binding.Cvabout.setOnClickListener {
             HomeScreen.navController.navigate(R.id.about_us_fragment)
         }
-        binding.CvStudenLogin.setOnClickListener {
+        binding.CvStudentLogin.setOnClickListener {
             HomeScreen.navController.navigate(R.id.studentLoginFragment)
         }
             return binding.root

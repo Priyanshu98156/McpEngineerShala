@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,7 +29,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-
+            android:scaleType="fitXY"
             android:src="@drawable/electrical"/>
     </androidx.cardview.widget.CardView>
     <View
@@ -125,11 +128,12 @@
         </LinearLayout>
     </HorizontalScrollView>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="visible"
         android:id="@+id/tvIntroPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -137,22 +141,24 @@
         android:text="Electrical Engineering. Department Embodies very Sincere Towards the building up of excellent career for diploma holders in the field of Electrical Engg .It is a basic and conventional course of Engg which is being offered since 1958 in this institute. The department. not only provides exemplary training to its own students but practical training is also provided to other Engg. Institute near by regions. The deptt.is of the firm opinion that once the students have understood the basic concepts of different subjects thoroughly and have received proper practical training in the laboratories, they are well set to be placed in any organization of repute as an electrical Engg.
         \n\nThe department is well equipped with various laboratories. It has highly qualified and experienced staff .Presently, the intake to the program is of 60 students. Duration of the course is of three years, each year is comprised of two semesters and at the end of each semester, examinations are conducted by Punjab State board of Technical Education, Chandigarh. A month’s compulsory practical training is provided to the students of Electrical Eng. Department in leading companies and organization after the end of fourth semester."/>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvVisionPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="The department of Electrical Engineering is committed to innovation and excellence in teaching and to provide program of the highest quality to produce good diploma engineers who have experience of putting theory into practice and are also capable of succeeding in advanced studies."/>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvMissionPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -161,11 +167,12 @@
         \nTo provide students with a supportive environment to facilitate learning and to solve life problems in electrical engineering."/>
 
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvFacilitiesPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -177,11 +184,12 @@
         \nThe deptt. has received a grant of Rs.3.00 lakhs for the modernisation of laboratories under the Modernisation and Removal of Obsolescence Scheme(MODROBS)  of All India Council of Technical Education(AICTE)."/>
 
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvCareerAndJobPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -192,4 +200,5 @@
 
 
 </RelativeLayout>
+    </ScrollView>
 </layout>

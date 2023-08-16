@@ -10,4 +10,27 @@
     <color name="textColor">#ECE5EC</color>
     <color name="pinkColor">#E91E1E</color>
     <color name="transparentColor">#02F8F5F5</color>
+    <color name="peach">#EECCCC</color>
+    <color name="blue">#9787D5</color>
+    <color name="blue1">#0000FF</color>
+    <color name="cream">#B68D76</color>
+    <color name="lightcream">#E1CFC5</color>
+    <color name="skyblue">#B9E9F8</color>
+    <color name="new_main_blue">#FB6464</color>
+    <color name="home_fragment_color">#7EBBF3</color>
+    <color name="dark_sea_green">#ff6961</color>
+    <color name="green">#09C775</color>
+    <color name="yellow">#FFD400</color>
+    <color name="mehroon">#ba1e68</color>
+    <color name="sapphire">#f7a579</color>
+    <color name="brown">#FACA9B</color>
+    <color name="darkgreen">#0c2d1c</color>
+    <color name="grey">#ACABAB</color>
+    <color name="bk">#415472</color>
+    <color name="red">#FF0000</color>
+    <color name="maincolor">#AFD2F4</color>
+    <color name="myred">#FB6464</color>
+    >
+
+
 </resources>

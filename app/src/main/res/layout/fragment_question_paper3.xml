@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.QuestionPaper3Fragment"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDe"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Digital Elctronics"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCpuc"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Comp.Prog.Using C"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSe"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Software Engg."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvOs"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Operating System"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMM"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MultiMedia"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvIwt"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Internet &amp;Web Techno."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

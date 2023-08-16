@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.QUestionPaper6Fragment"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAdw"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ADW"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAda"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ADA"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCpp"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CPP"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCc"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cloud Computing"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</layout>

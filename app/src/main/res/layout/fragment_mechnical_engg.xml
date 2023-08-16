@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.MechnicalEnggFragment">
@@ -26,8 +29,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-
-            android:src="@drawable/electrical"/>
+            android:scaleType="fitXY"
+            android:src="@drawable/mechengg"/>
     </androidx.cardview.widget.CardView>
     <View
 
@@ -120,33 +123,37 @@
         </LinearLayout>
     </HorizontalScrollView>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="visible"
         android:id="@+id/tvIntroPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="Mechanical Engineering is the core engineering discipline which is most sought after branch by their students. The department of Mechanical Engg.in Mehr Chand Polytechnic College has been recognized for its high quality education over the last five decades. The branch is concerned with designed manufactured , installation and operation of engines and machines ,manufacturing processes, industrial setups. We strives to creates an environment in the deptt .which is conducive to sincere studies as well as for the development of overall personality of the young students by inculcating in them ,the healthy habits,ethical values ,cultural outlook and co-operative spirit, so that after completion of their course they not only become good technocrats but also good citizens. Possessing a high degree of integrity and sincerity and being in a position to contribute to the society and carve a niche for themselves for a successful and bright professional career ,bringing good name to the department and institutes are some of its main vision planks."/>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvVisionPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="The Mechanical Engineering Department aims to be renowned for giving exceptional education and enhancing skills in order to produce well qualified, innovative, self sufficient, competent and successful engineers."/>
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
+
         android:visibility="gone"
         android:id="@+id/tvMissionPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -154,11 +161,12 @@
         android:text="To develop industrial linkages in order to provide clarity of technical concepts and quality education and to produce engineers who can compete in the global market by constantly training the faculty to ensure up to date dissemination of knowledge to the students and self."/>
 
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvFacilitiesPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -166,11 +174,12 @@
         android:text="Talking about placements the students have capitalized on the reputation of this prestigious institute and have managed to get themselves well placed in reputed organizations including manufacturing, textile, automobile and marketing sectors. Only during the last three years over fifty students have been placed in the industries related to any one of the above mentioned sectors. In addition to this our students have managed to find a place in various public sector undertakings like BHEL, GREF, BARC, PWD, NTPC, NHPC, Maruti Udyog Ltd and Indian railways etc."/>
 
     <TextView
+        android:justificationMode="inter_word"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:visibility="gone"
         android:id="@+id/tvCareerAndJobPara"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_margin="10dp"
         android:layout_below="@+id/Hsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -189,4 +198,5 @@
         \nGodrej Industries Limited"/>
 
 </RelativeLayout>
+    </ScrollView>
 </layout>

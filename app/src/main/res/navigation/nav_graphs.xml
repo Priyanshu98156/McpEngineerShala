@@ -11,14 +11,8 @@
         android:label="fragment_home_fragment"
         tools:layout="@layout/fragment_home_fragment" >
         <action
-            android:id="@+id/action_home_fragment_to_announcement_fragement2"
-            app:destination="@id/announcement_fragement" />
-        <action
             android:id="@+id/action_home_fragment_to_seats_availability_fragment"
             app:destination="@id/seats_availability_fragment" />
-        <action
-            android:id="@+id/action_home_fragment_to_online_registration_fragment"
-            app:destination="@id/online_registration_fragment" />
         <action
             android:id="@+id/action_home_fragment_to_about_us_fragment"
             app:destination="@id/about_us_fragment" />
@@ -31,15 +25,9 @@
         <action
             android:id="@+id/action_home_fragment_to_studentLoginFragment"
             app:destination="@id/studentLoginFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/announcement_fragement"
-        android:name="com.priyanshu.mcpengineershala.fragment.announcement_fragement"
-        android:label="fragment_announcement_fragement"
-        tools:layout="@layout/fragment_announcement_fragement" >
         <action
-            android:id="@+id/action_announcement_fragement_to_home_fragment2"
-            app:destination="@id/home_fragment" />
+            android:id="@+id/action_home_fragment_to_onlineRegistrationFragment"
+            app:destination="@id/onlineRegistrationFragment" />
     </fragment>
     <fragment
         android:id="@+id/seats_availability_fragment"
@@ -48,15 +36,6 @@
         tools:layout="@layout/fragment_seats_availability_fragment" >
         <action
             android:id="@+id/action_seats_availability_fragment_to_home_fragment"
-            app:destination="@id/home_fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/online_registration_fragment"
-        android:name="com.priyanshu.mcpengineershala.fragment.online_registration_fragment"
-        android:label="fragment_online_registration_fragment"
-        tools:layout="@layout/fragment_online_registration_fragment" >
-        <action
-            android:id="@+id/action_online_registration_fragment_to_home_fragment"
             app:destination="@id/home_fragment" />
     </fragment>
     <fragment
@@ -97,6 +76,9 @@
         <action
             android:id="@+id/action_courses_fragment2_to_autmbileEnggFragment"
             app:destination="@id/AutomobileEnggFragment" />
+        <action
+            android:id="@+id/action_courses_fragment2_to_testingFragment2"
+            app:destination="@id/testingFragment2" />
     </fragment>
     <fragment
         android:id="@+id/compEnggFragment"
@@ -171,25 +153,21 @@
             android:id="@+id/action_studentLoginFragment_to_home_fragment"
             app:destination="@id/home_fragment" />
         <action
-            android:id="@+id/action_studentLoginFragment_to_studentHomeFragment"
-            app:destination="@id/StudentHomeFragment" />
-        <action
             android:id="@+id/action_studentLoginFragment_to_signUpStudentFragment"
-            app:destination="@id/signUpStudentFragment" />
+            app:destination="@id/home_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onlineRegistrationFragment"
+        android:name="com.priyanshu.mcpengineershala.fragment.OnlineRegistrationFragment"
+        android:label="OnlineRegistrationFragment" >
+        <action
+            android:id="@+id/action_onlineRegistrationFragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/StudentHomeFragment"
-        android:name="com.priyanshu.mcpengineershala.fragment.StudentHomeFragment"
-        android:label="StudentHomeFragment" />
-    <fragment
-        android:id="@+id/signUpStudentFragment"
-        android:name="com.priyanshu.mcpengineershala.fragment.SignUpStudentFragment"
-        android:label="SignUpStudentFragment" >
-        <action
-            android:id="@+id/action_signUpStudentFragment_to_studentLoginFragment"
-            app:destination="@id/studentLoginFragment" />
-        <action
-            android:id="@+id/action_signUpStudentFragment_to_StudentHomeFragment"
-            app:destination="@id/StudentHomeFragment" />
-    </fragment>
+        android:id="@+id/testingFragment2"
+        android:name="com.priyanshu.mcpengineershala.fragment.TestingFragment"
+        android:label="TestingFragment" />
+
 </navigation>

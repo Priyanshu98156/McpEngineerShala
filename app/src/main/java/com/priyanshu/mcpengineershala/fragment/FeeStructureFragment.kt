@@ -1,5 +1,6 @@
 package com.priyanshu.mcpengineershala.fragment
 
+import android.graphics.Typeface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -32,6 +33,33 @@ class FeeStructureFragment : Fragment() {
         // Inflate the layout for this fragment
 
         var binding = FragmentFeeStructureBinding.inflate(layoutInflater,container,false)
+        binding.tvGeneralCandidate.setOnClickListener {
+            binding.tvGeneralCandidate.setTypeface(null,Typeface.BOLD)
+            binding.tvScCandidate.setTypeface(null,Typeface.NORMAL)
+            binding.tvStudentFund.setTypeface(null,Typeface.NORMAL)
+
+            binding.tivGeneralCandidate.visibility = View.VISIBLE
+            binding.tivScCandidate.visibility = View.GONE
+            binding.tivStudentFund.visibility = View.GONE
+        }
+        binding.tvScCandidate.setOnClickListener {
+            binding.tvGeneralCandidate.setTypeface(null,Typeface.NORMAL)
+            binding.tvScCandidate.setTypeface(null,Typeface.BOLD)
+            binding.tvStudentFund.setTypeface(null,Typeface.NORMAL)
+
+            binding.tivGeneralCandidate.visibility = View.GONE
+            binding.tivScCandidate.visibility = View.VISIBLE
+            binding.tivStudentFund.visibility = View.GONE
+        }
+        binding.tvStudentFund.setOnClickListener {
+            binding.tvGeneralCandidate.setTypeface(null,Typeface.NORMAL)
+            binding.tvScCandidate.setTypeface(null,Typeface.NORMAL)
+            binding.tvStudentFund.setTypeface(null,Typeface.BOLD)
+
+            binding.tivGeneralCandidate.visibility = View.GONE
+            binding.tivScCandidate.visibility = View.GONE
+            binding.tivStudentFund.visibility = View.VISIBLE
+        }
 
 
         return binding.root

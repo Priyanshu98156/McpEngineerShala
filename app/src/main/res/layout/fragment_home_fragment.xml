@@ -1,253 +1,366 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
- <ScrollView
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     android:fillViewport="true">
-     <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:orientation="vertical">
-<LinearLayout
-    android:id="@+id/Ll1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context=".fragment.home_fragment">
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="20dp"
-        android:layout_gravity="center"
-        android:layout_height="180dp">
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:layout_width="350dp"
-            android:layout_gravity="center"
-            android:layout_height="180dp"
-            android:id="@+id/viewpager"
-            android:layout_margin="20dp"
-
-            />
-        </androidx.cardview.widget.CardView>
-</LinearLayout>
-    <LinearLayout
-
-        android:layout_below="@+id/Ll1"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        >
-
+        android:fillViewport="true">
 
         <LinearLayout
+            android:id="@+id/Ll1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:orientation="vertical"
+            tools:context=".fragment.home_fragment">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/Cvannounce"
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="10dp"
-                app:cardBackgroundColor="#2d2d2d"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp">
 
-                app:cardCornerRadius="15dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
                     android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="announcement"
-                    android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:layout_margin="20dp"
+
+                    />
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/Cvcourses"
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                app:cardBackgroundColor="#2d2d2d"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                app:cardCornerRadius="15dp">
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Courses Offered"
-                    android:textColor="@color/white"
-                    android:textSize="20dp" />
-            </androidx.cardview.widget.CardView>
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Cvabout"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#038D21"
+                        android:layout_height="150dp">
+                    <androidx.cardview.widget.CardView
+
+                        app:cardBackgroundColor="#5FC056"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/about_us_file"
+                                />
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            >
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="About Us"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CvFeeStr"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#03428D"
+                        android:layout_height="150dp">
+                    <androidx.cardview.widget.CardView
+
+                        app:cardBackgroundColor="#00A3FF"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/fees_icon"
+                                />
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            >
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fee Structure"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CvSeats"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#9E3737"
+                        android:layout_height="150dp">
+                        <androidx.cardview.widget.CardView
+
+                            app:cardBackgroundColor="#C34949"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                >
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/stydent_bench"
+                                    />
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            >
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Seats Availability"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvCourses"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#A97D27"
+                        android:layout_height="150dp">
+                        <androidx.cardview.widget.CardView
+
+                            app:cardBackgroundColor="#C39A49"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                >
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/online_course"
+                                    />
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            >
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Courses Offered"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Cvregister"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#921D7F"
+                        android:layout_height="150dp">
+                        <androidx.cardview.widget.CardView
+
+                            app:cardBackgroundColor="#D246BC"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                >
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/press_pass"
+                                    />
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            >
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Online Registration"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CvStudentLogin"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#8D2C03"
+                        android:layout_height="150dp">
+                        <androidx.cardview.widget.CardView
+
+                            app:cardBackgroundColor="#DE590E"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                >
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/student"
+                                    />
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            >
+                            <TextView
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Student Login"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            >
-            <androidx.cardview.widget.CardView
-                android:id="@+id/CvSeats"
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                app:cardBackgroundColor="#2d2d2d"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
 
-                app:cardCornerRadius="15dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Seats Availability"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:layout_gravity="center"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/CvFeeStr"
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                app:cardBackgroundColor="#2d2d2d"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-
-                app:cardCornerRadius="15dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Fee Structure "
-                    android:textColor="@color/white"
-                    android:textSize="20dp" />
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            >
-            <androidx.cardview.widget.CardView
-                android:id="@+id/Cvregister"
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                app:cardBackgroundColor="#2d2d2d"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-
-                app:cardCornerRadius="15dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Online Registration"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:layout_gravity="center"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/Cvabout"
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                app:cardBackgroundColor="#2d2d2d"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-
-                app:cardCornerRadius="15dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="About Us"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:layout_gravity="center"/>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            >
-            <androidx.cardview.widget.CardView
-                android:id="@+id/CvStudenLogin"
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                app:cardBackgroundColor="#2d2d2d"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-
-                app:cardCornerRadius="15dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Student Login"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:layout_gravity="center"/>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/CvFacultyLogin"
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                app:cardBackgroundColor="#2d2d2d"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-
-                app:cardCornerRadius="15dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Faculty Login"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:layout_gravity="center"/>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-
-    </LinearLayout>
-     </LinearLayout>
- </ScrollView>
-    </RelativeLayout>
+    </ScrollView>
 </layout>

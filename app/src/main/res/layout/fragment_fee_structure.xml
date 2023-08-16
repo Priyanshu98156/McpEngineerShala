@@ -41,6 +41,7 @@
         <TextView
             android:id="@+id/tvGeneralCandidate"
             android:layout_width="wrap_content"
+            android:backgroundTint="@color/new_main_blue"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginStart="6dp"
@@ -53,6 +54,7 @@
             android:textStyle="bold"
             />
         <TextView
+            android:backgroundTint="@color/new_main_blue"
             android:id="@+id/tvScCandidate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,6 +69,7 @@
             android:textStyle="normal"
             />
         <TextView
+            android:backgroundTint="@color/new_main_blue"
             android:id="@+id/tvStudentFund"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,11 +86,28 @@
         </LinearLayout>
     </HorizontalScrollView>
     <com.ortiz.touchview.TouchImageView
+        android:layout_below="@id/Hsv"
         android:id="@+id/tivGeneralCandidate"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/general"
         android:visibility="visible"
+        />
+    <com.ortiz.touchview.TouchImageView
+        android:layout_below="@id/Hsv"
+        android:id="@+id/tivScCandidate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sccandidate"
+        android:visibility="gone"/>
+
+    <com.ortiz.touchview.TouchImageView
+        android:layout_below="@id/Hsv"
+        android:id="@+id/tivStudentFund"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/studentactivitesfund"
+        android:visibility="gone"
         />
 
 </RelativeLayout>

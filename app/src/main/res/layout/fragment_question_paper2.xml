@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.QuestionPaper2Fragment"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPhysics"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Applied Physics-2"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEng"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="English &amp; Comm.Skills-2"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEvs"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Environmental Studies"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMaths"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Applied Maths-2"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBe"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/maincolor"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Basic Electronics"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+</layout>

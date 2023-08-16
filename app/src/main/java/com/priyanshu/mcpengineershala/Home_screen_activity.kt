@@ -3,25 +3,35 @@ package com.priyanshu.mcpengineershala
 
 import android.Manifest.permission.CALL_PHONE
 import android.Manifest.permission.SEND_SMS
+import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
+import android.widget.*
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import com.google.firebase.auth.FirebaseAuth
 import com.priyanshu.mcpengineershala.databinding.ActivityHomeScreenBinding
+import com.priyanshu.mcpengineershala.helper.SharedPreferencesHelper
+import androidx.cursoradapter.widget.CursorAdapter
+
 
 class Home_screen_activity : AppCompatActivity() {
     lateinit var navController: NavController
     lateinit var binding: ActivityHomeScreenBinding
     lateinit var toggle: ActionBarDrawerToggle
+    lateinit var sharedPreferencesHelper: SharedPreferencesHelper
+
 
     companion object {
         var MY_PERMISSIONS_REQUEST_SEND_SMS = 1
@@ -29,48 +39,43 @@ class Home_screen_activity : AppCompatActivity() {
 
     }
 
+//    @RequiresApi(Build.VERSION_CODES.O)
+//    @SuppressLint("ResourceAsColor", "WrongConstant")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+//        window.statusBarColor=R.color.black
+//        window.apply {
+//            this.colorMode=R.color.black
+//        }
         navController = findNavController(R.id.navController)
-        binding.apply {
+
             toggle = ActionBarDrawerToggle(
                 this@Home_screen_activity,
-                drawerLayout,
+                binding.drawerLayout,
                 R.string.open,
                 R.string.close
             )
-            drawerLayout.addDrawerListener(toggle)
             toggle.syncState()
+        binding.drawerLayout.addDrawerListener(toggle)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-            navView.setNavigationItemSelectedListener {
+            binding.navView.setNavigationItemSelectedListener {
+                println("TEsting==================")
                 when (it.itemId) {
                     R.id.home -> {
-                            navController.navigate(R.id.home_fragment)
-
+                        navController.navigate(R.id.home_fragment)
                         Toast.makeText(
                             this@Home_screen_activity,
                             "presssed 1 item",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
-                    R.id.search -> {
-                        Toast.makeText(
-                            this@Home_screen_activity,
-                            "presssed 2 item",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
+
                     R.id.login -> {
-                        Toast.makeText(
-                            this@Home_screen_activity,
-                            "presssed 3 item",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        navController.navigate(R.id.studentLoginFragment)
                     }
                     R.id.whatsapp -> {
                         val phoneNumber =
@@ -121,12 +126,13 @@ class Home_screen_activity : AppCompatActivity() {
                         ) {
                             ActivityCompat.requestPermissions(
                                 this@Home_screen_activity,
-                                arrayOf(android.Manifest.permission.CALL_PHONE),MY_PERMISSIONS_REQUEST_CALL_PHONE
+                                arrayOf(android.Manifest.permission.CALL_PHONE),
+                                MY_PERMISSIONS_REQUEST_CALL_PHONE
 
                             )
                             checkPermissionCall()
                         } else {
-                            val phoneNumber = "9815673234"
+                            val phoneNumber = "9888168884"
                             val callIntent =
                                 Intent(Intent.ACTION_CALL, Uri.parse("tel:$phoneNumber"))
                             startActivity(callIntent)
@@ -135,7 +141,6 @@ class Home_screen_activity : AppCompatActivity() {
                     }
                 }
                 true
-            }
         }
         binding.menubar.setOnItemSelectedListener {
             when (it.itemId) {
@@ -185,7 +190,17 @@ class Home_screen_activity : AppCompatActivity() {
             true
         }
         return super.onOptionsItemSelected(item)
-
-
     }
+
+//    override fun onStart() {
+//        super.onStart()
+//        navController = findNavController(R.id.navController)
+//        var user = FirebaseAuth.getInstance().currentUser
+//        if (user!=null){
+//            navController.navigate(R.id .studentHomeFragment)
+//        }
+//    }
+
+
 }
+

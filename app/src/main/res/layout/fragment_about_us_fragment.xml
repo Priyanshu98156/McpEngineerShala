@@ -1,14 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout   xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.about_us_fragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/Ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".fragment.home_fragment">
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center"
+            android:layout_height="180dp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="180dp"
+                android:id="@+id/viewpager"
+                android:layout_margin="20dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <View
+        android:id="@+id/gap"
+        android:layout_below="@id/Ll1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        />
+    <View
+
+        android:id="@+id/gapNew"
+        android:layout_below="@id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black"
+        />
+    <HorizontalScrollView
+        android:layout_below="@id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Hsv">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/hsv_background"
+                android:padding="10dp"
+                android:text="  Introduction  "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/tvVision"
+                android:background="@drawable/hsv_background"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Our Management  "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvMission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/hsv_background"
+                android:padding="10dp"
+                android:text="  Administration  "
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tvIntroPara"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Hsv"
+        android:layout_margin="15dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:justificationMode="inter_word"
+        android:text="It was established in 1954 and is the oldest field of engineering at Mehr Chand Polytechnic College in Jalandhar. A broad-based diploma programme in civil engineering is available to matriculating students through the department of civil engineering. The course curriculum is thorough and well-designed to give students a solid foundation in all areas connected to the discipline of civil engineering through hands-on training camps, site visits, theoretical sessions, project work, and lab exercises. Throughout the previous 50 years, skilled, experienced, and dedicated faculty members have worked extremely hard to elevate the department to a position of prominence throughout all of northern India. Due to the development boom and the numerous construction projects undertaken by Indian and international businesses"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+    <TextView
+        android:layout_margin="15dp"
+        android:justificationMode="inter_word"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvVisionPara"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="The DAV College Trust and Management Society is the largest non-governmental educational organization in India managing a chain of over 900 institutions in India and abroad.\nThe DAV management is more than 125 years old and its educational budget is next to central government of India and more than that of any state government. The DAV Management has established a number of medical and engineering colleges, dental colleges, polytechnics, Industrial training centres, schools, arts and science colleges.
+
+\nThe DAV Management created a new milestone, when its First University at Jalandhar – DAV University (The Nalanda of Modern India) was inaugurated and dedicated to the Nation on 20th April, 2013 by Hon’ble President Dr. Punam Suri, Padma Shree Awardee. All these DAV institutions are well known for the quality education and the highest level of dedication, sincerity, commitment and discipline.
+
+\nThe DAV society has, as it’s alumni, distinguished jurists, diplomats, doctors, engineers, scientists, educationists, artists, literary figures and sportsmen. Legendary Bhagat Singh, Punjab Kesri Lala Lajpat Rai, Former Prime Ministers Dr. Manmohan Singh, Sh.A.B. Yajpai and Sh. I. K. Gujral, Actors Shahrukh Khan, Sushant Singh Rajput, Ayushman Khurana, Cricketers M.S. Dhoni and Yuvraj Singh, Ghazal Singer Jagjit Singh are all esteemed members of our rich and large DAV Family.
+
+"/>
+    <TextView
+        android:layout_margin="15dp"
+        android:justificationMode="inter_word"
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/tvMissionPara"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/Hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Mehr Chand Polytechnic College, Jalandhar, recognized as one of the centres of excellence in technical education in the state of Punjab is one of the oldest and pioneering polytechnic college of North India. It was  established in the year 1954 by the Stalwarts of D.A.V. movement in the sacred memory of Lala Mehr Chand Ji, an embodiment of self sacrifice, honesty and commitment. The first technical Institution of India situated in the heart of the city under the patronage of DAV College Management Committee, New Delhi, was aimed at changing the face of the old established industrial traditions by creating an effective technical manpower for the society and developing industry. Under the dynamic leadership of an eminent educationist Dr. Punam Suri, Padma Shree Awardee, President, DAV College Managing Committee, New Delhi, the Institute is scaling new heights and is committed to pursuing excellence along with creativity and integrity.
+"/>
 
 
 
 
 
-</LinearLayout>
+
+
+</RelativeLayout>
+    </ScrollView>
+</layout>

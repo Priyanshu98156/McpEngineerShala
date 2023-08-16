@@ -1,236 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
  <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
      xmlns:tools="http://schemas.android.com/tools"
      android:layout_width="match_parent"
      android:layout_height="wrap_content">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment.courses_fragment"
-    android:orientation="vertical">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/CompEngg"
+             android:layout_margin="10dp"
+             app:cardCornerRadius="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardBackgroundColor="#FF9513">
+             <RelativeLayout
+                 android:padding="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:layout_width="70dp"
+                     android:scaleType="centerCrop"
+                     android:layout_height="70dp"
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/computer_e_"/>
+                 <LinearLayout
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="C.S.E."
+                         android:textColor="@color/white"
+                         android:textStyle="bold"
+                         android:textSize="30dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Computer Science &amp; Engg."
+                         android:textColor="@color/white"
+                         android:textSize="20dp"/>
+                 </LinearLayout>
+             </RelativeLayout>
 
 
-    <LinearLayout
-        android:layout_marginTop="80dp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-        <androidx.cardview.widget.CardView
-            android:id="@+id/CompEngg"
-            android:layout_margin="10dp"
-            android:layout_width="180dp"
-            android:layout_height="170dp">
-            <RelativeLayout
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:id="@+id/Ece"
+             android:layout_margin="10dp"
+             app:cardCornerRadius="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardBackgroundColor="#DE590E">
+             <RelativeLayout
+                 android:padding="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:layout_width="70dp"
+                     android:scaleType="centerCrop"
+                     android:layout_height="70dp"
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/ece_"/>
+                 <LinearLayout
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
 
-                android:layout_width="200dp"
-                android:layout_height="170dp">
-
-                <ImageView
-                    android:id="@+id/computer"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/computer" />
-
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/computer"
-                    android:layout_marginTop="-25dp"
-                    android:textColor="@color/black"
-                    android:text="Computer Engg"
-                    android:textSize="20dp" />
-
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/ElectricalEngg"
-            android:layout_width="180dp"
-            android:layout_height="170dp"
-            android:layout_margin="10dp">
-            <RelativeLayout
-                android:layout_width="200dp"
-                android:layout_height="170dp">
-
-                <ImageView
-                    android:id="@+id/electrical"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/electrical"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="E.C.E."
+                         android:textColor="@color/white"
+                         android:textStyle="bold"
+                         android:textSize="30dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Electrical &amp; Comm.Engg."
+                         android:textColor="@color/white"
+                         android:textSize="20dp"/>
+                 </LinearLayout>
+             </RelativeLayout>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/electrical"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="-15dp"
-                    android:text="Electrical Engg"
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-    <LinearLayout
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:id="@+id/AutoEngg"
+             android:layout_margin="10dp"
+             app:cardCornerRadius="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardBackgroundColor="#54ADFF">
+             <RelativeLayout
+                 android:padding="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:layout_width="70dp"
+                     android:scaleType="centerCrop"
+                     android:layout_height="70dp"
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/a_e_"/>
+                 <LinearLayout
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
 
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-        <androidx.cardview.widget.CardView
-            android:id="@+id/MechEngg"
-            android:layout_margin="10dp"
-            android:layout_width="180dp"
-            android:layout_height="170dp">
-            <RelativeLayout
-                android:layout_width="200dp"
-                android:layout_height="170dp">
-
-                <ImageView
-                    android:id="@+id/mechanical"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/mechanical" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/mechanical"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="-15dp"
-                    android:text="Mechanical Engg"
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
-
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/CivilEngg"
-            android:layout_width="180dp"
-            android:layout_height="170dp"
-            android:layout_margin="10dp">
-            <RelativeLayout
-                android:layout_width="200dp"
-                android:layout_height="170dp">
-
-                <ImageView
-                    android:id="@+id/civil"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/civil"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="A.E."
+                         android:textColor="@color/white"
+                         android:textStyle="bold"
+                         android:textSize="30dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Automobile Engineering"
+                         android:textColor="@color/white"
+                         android:textSize="20dp"/>
+                 </LinearLayout>
+             </RelativeLayout>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/civil"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="-15dp"
-                    android:text="Civil Engg"
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-    <LinearLayout
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-        <androidx.cardview.widget.CardView
-            android:id="@+id/AutoEngg"
-            android:layout_margin="10dp"
-            android:layout_width="180dp"
-            android:layout_height="170dp">
-            <RelativeLayout
-                android:layout_width="200dp"
-                android:layout_height="170dp">
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:id="@+id/CivilEngg"
+             android:layout_margin="10dp"
+             app:cardCornerRadius="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardBackgroundColor="#B733FF">
+             <RelativeLayout
+                 android:padding="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:layout_marginTop="5dp"
+                     android:layout_width="60dp"
+                     android:scaleType="fitCenter"
+                     android:layout_height="60dp"
 
-                <ImageView
-                    android:id="@+id/automobile"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/automobile" />
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/c_e_"/>
+                 <LinearLayout
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
 
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/automobile"
-                    android:layout_marginTop="-25dp"
-                    android:textColor="@color/black"
-                    android:text="Automobile Engg"
-                    android:textSize="20dp" />
-
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/Ece"
-            android:layout_width="180dp"
-            android:layout_height="170dp"
-            android:layout_margin="10dp">
-            <RelativeLayout
-                android:layout_width="200dp"
-                android:layout_height="170dp">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="C.E."
+                         android:textColor="@color/white"
+                         android:textStyle="bold"
+                         android:textSize="30dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Civil Engineering"
+                         android:textColor="@color/white"
+                         android:textSize="20dp"/>
+                 </LinearLayout>
+             </RelativeLayout>
 
 
-                <ImageView
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:id="@+id/ElectricalEngg"
+             android:layout_margin="10dp"
+             app:cardCornerRadius="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardBackgroundColor="#058F0C">
+             <RelativeLayout
+                 android:padding="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:layout_width="70dp"
+                     android:scaleType="centerCrop"
+                     android:layout_height="70dp"
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/electrical_e_"/>
+                 <LinearLayout
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
 
-                    android:id="@+id/electronicscomm"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/electronicscomm" />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="E.E."
+                         android:textColor="@color/white"
+                         android:textStyle="bold"
+                         android:textSize="30dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Electrical Engineering"
+                         android:textColor="@color/white"
+                         android:textSize="20dp"/>
+                 </LinearLayout>
+             </RelativeLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/electronicscomm"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="-15dp"
-                    android:text="Electronics and communication"
-                    android:textColor="@color/black"
-                    android:textSize="15dp" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-        <androidx.cardview.widget.CardView
-            android:id="@+id/Pharmacy"
-            android:layout_margin="10dp"
-            android:layout_width="180dp"
-            android:layout_height="170dp">
-            <RelativeLayout
-                android:layout_width="200dp"
-                android:layout_height="170dp">
 
-                <ImageView
-                    android:id="@+id/pharmacy"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/pharmacy" />
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:id="@+id/MechEngg"
+             android:layout_margin="10dp"
+             app:cardCornerRadius="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardBackgroundColor="#DFAD4A">
+             <RelativeLayout
+                 android:padding="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:layout_width="70dp"
+                     android:scaleType="centerCrop"
+                     android:layout_height="70dp"
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/m_e_"/>
+                 <LinearLayout
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
 
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/pharmacy"
-                    android:layout_marginTop="-15dp"
-                    android:textColor="@color/black"
-                    android:text="Pharmacy"
-                    android:textSize="20dp" />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="M.E."
+                         android:textColor="@color/white"
+                         android:textStyle="bold"
+                         android:textSize="30dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Mechanical Engineering"
+                         android:textColor="@color/white"
+                         android:textSize="20dp"/>
+                 </LinearLayout>
+             </RelativeLayout>
 
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-</LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+         android:id="@+id/Pharmacy"
+         android:layout_margin="10dp"
+         app:cardCornerRadius="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:cardBackgroundColor="#EA4747">
+         <RelativeLayout
+             android:padding="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <ImageView
+                 android:layout_width="70dp"
+                 android:scaleType="centerCrop"
+                 android:layout_height="70dp"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/pharmacy"/>
+             <LinearLayout
+                 android:layout_marginLeft="10dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Pharma"
+                     android:textColor="@color/white"
+                     android:textStyle="bold"
+                     android:textSize="30dp"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Pharmacy"
+                     android:textColor="@color/white"
+                     android:textSize="20dp"/>
+             </LinearLayout>
+         </RelativeLayout>
+
+
+     </androidx.cardview.widget.CardView>
+
+     </LinearLayout>
  </ScrollView>
 </layout>

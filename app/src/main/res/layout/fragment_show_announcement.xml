@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ShowAnnouncementFragment"
+    android:orientation="vertical"
+    >
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:gravity="center"
+        android:id="@+id/ttttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_below="@+id/ttttitle"
+        android:id="@+id/tvTitle"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="Title"
+        android:textSize="20dp"
+        />
+
+    <com.ortiz.touchview.TouchImageView
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/ivAnnounce"
+        android:src="@drawable/placeholder"/>
+    <Button
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/maincolor"
+        android:text="Details"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/ivAnnounce"
+        android:id="@+id/tvDescription"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="Description"
+        android:textStyle="italic"
+        android:textSize="20dp"/>
+
+
+
+</RelativeLayout>
+</layout>
